@@ -1,4 +1,4 @@
-package com.bechris100.remote4j.discord.bd;
+package com.bechris100.remote4j.discord;
 
 import com.bechris100.remote4j.commons.ProcessList;
 import com.bechris100.remote4j.commons.utils.OperatingSystem;
@@ -6,6 +6,7 @@ import com.bechris100.remote4j.commons.utils.OperatingSystem;
 import java.io.IOException;
 import java.util.List;
 
+@Deprecated
 public class BetterDiscord {
 
     private final OperatingSystem operatingSystem;
